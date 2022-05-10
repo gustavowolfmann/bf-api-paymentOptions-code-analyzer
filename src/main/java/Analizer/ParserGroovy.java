@@ -49,6 +49,7 @@ public class ParserGroovy {
             }
             parsedClass.setOutputPath("/Users/gwolfmann/Downloads/groovy-sintactic-analizer/src/generated/");
             parsedClass.generateJavaSource();
+            System.out.println("Codigo generado para "+fileName);
         } catch (IOException e) {
             e.printStackTrace();
         }
