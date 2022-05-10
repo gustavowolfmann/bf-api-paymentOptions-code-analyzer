@@ -52,4 +52,14 @@ public class ParsedClass {
     public String getJavaAnnotation() {
         return annotation.isPresent() ? annotation.get() : "";
     }
+
+    public List<String> getNoNativeAttribs(){
+        List <String> result = new ArrayList<>();
+        for(final Attrib attrib: attribs){
+            if (!(attrib.isNative()))
+                result.add(attrib.getNameOfClass());
+        }
+
+        return result;
+    }
 }

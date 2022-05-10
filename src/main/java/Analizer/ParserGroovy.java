@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 import lombok.Data;
+import org.checkerframework.checker.units.qual.C;
 import org.codehaus.groovy.ast.ASTNode;
 import org.codehaus.groovy.ast.ClassNode;
 import org.codehaus.groovy.ast.FieldNode;
@@ -14,12 +15,27 @@ import org.codehaus.groovy.control.CompilePhase;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
 
 @Data
 public class ParserGroovy {
+
+    static List<ClassToParse> toParseList = new ArrayList<>();
+
+    public static void initList(){
+        toParseList.add(new ClassToParse("PaymentOptionsResponse.groovy",
+                "/Users/gwolfmann/Downloads/groovy-sintactic-analizer/src/main/java/Analizer/",
+                Boolean.FALSE));
+    }
+
+    public static void doParse(){
+        ClassToParse classToParse = toParseList.get(0);
+        parsing(classToParse.getPath()+classToParse.getName());
+    }
+
     public static void parsing(String fileName){
         System.out.println("Parsing file "+fileName);
         try {

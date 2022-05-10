@@ -37,4 +37,16 @@ public class Attrib {
         }
     }
 
+    public String getNameOfClass(){
+        return genericType.isPresent() ? genericType.get() : type;
+    }
+
+    public Boolean isNative(){
+        Boolean result = switch (getNameOfClass().toLowerCase(Locale.ROOT)) {
+            case "boolean", "bigdecimal","string","int","long" -> Boolean.TRUE;
+            default -> Boolean.FALSE;
+        };
+        return result;
+    }
+
 }

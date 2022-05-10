@@ -1,8 +1,0 @@
-Analizer/Attrib.java
- Analizer.Attrib
-Analizer/ParsedClass.java
- Analizer.ParsedClass
-Main.java
- Main
-Analizer/ParserGroovy.java
- Analizer.ParserGroovy
