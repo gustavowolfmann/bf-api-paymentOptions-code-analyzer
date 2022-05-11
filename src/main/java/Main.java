@@ -2,8 +2,9 @@ import Analizer.ParserGroovy;
 
 public class Main {
 
+    static ParserGroovy parser = new ParserGroovy();
     public static void main(String[] args) {
-        ParserGroovy.initList();
-        ParserGroovy.doParse();
+        parser.initialize();
+        parser.doParse();
     }
 }

@@ -1,11 +1,13 @@
-Main.java
- Main
-Analizer/ClassToParse.java
- Analizer.ClassToParse
- Analizer.ClassToParse$ClassToParseBuilder
 Analizer/ParsedClass.java
  Analizer.ParsedClass
 Analizer/Attrib.java
  Analizer.Attrib
+Analizer/ClassToParse.java
+ Analizer.ClassToParse
+ Analizer.ClassToParse$ClassToParseBuilder
+Analizer/FileProcessor.java
+ Analizer.FileProcessor
+Main.java
+ Main
 Analizer/ParserGroovy.java
  Analizer.ParserGroovy

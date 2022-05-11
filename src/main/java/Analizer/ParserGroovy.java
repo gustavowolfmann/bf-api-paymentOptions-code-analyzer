@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 import lombok.Data;
-import org.checkerframework.checker.units.qual.C;
+import lombok.Singular;
 import org.codehaus.groovy.ast.ASTNode;
 import org.codehaus.groovy.ast.ClassNode;
 import org.codehaus.groovy.ast.FieldNode;
@@ -15,34 +15,37 @@ import org.codehaus.groovy.control.CompilePhase;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Optional;
+import java.util.*;
 
 @Data
 public class ParserGroovy {
 
-    static List<ClassToParse> toParseList = new ArrayList<>();
+    private FileProcessor filesToProcess = new FileProcessor();
 
-    public static void initList(){
-        toParseList.add(new ClassToParse("PaymentOptionsResponse.groovy",
-                "/Users/gwolfmann/Downloads/groovy-sintactic-analizer/src/main/java/Analizer/",
-                Boolean.FALSE));
+    public void initialize(){
+        filesToProcess.initialize();
     }
 
-    public static void doParse(){
-        ClassToParse classToParse = toParseList.get(0);
-        parsing(classToParse.getPath()+classToParse.getName());
+    public void doParse(){
+        ClassToParse classToParse = filesToProcess.getNext();
+        ParsedClass parsedClass = parsing(classToParse.getPath()+classToParse.getName());
+        parsedClass.generateJavaSource();
+        filesToProcess.markDone(classToParse);
+        System.out.println("Codigo generado para "+parsedClass.getName());
+
+        List<String> toCall = parsedClass.getNoNativeAttribs();
+        filesToProcess.addFiles(toCall);
+        System.out.println("toCall de "+parsedClass.getName()+" tiene "+ String.valueOf(toCall.size())+" no nativos");
+        toCall.stream().forEach(s -> {System.out.println(s);});
     }
 
-    public static void parsing(String fileName){
+    public ParsedClass parsing(String fileName){
         System.out.println("Parsing file "+fileName);
+        ParsedClass parsedClass = new ParsedClass();
         try {
             final String sourceContents = Files.readString(Path.of(fileName), StandardCharsets.UTF_8);
             final AstBuilder astBuilder = new AstBuilder();
             final List<ASTNode> nodes = astBuilder.buildFromString(CompilePhase.CONVERSION,true,sourceContents);
-            ParsedClass parsedClass = new ParsedClass();
 
             for (final ASTNode node : nodes) {
                 if (node instanceof ClassNode) {
@@ -64,11 +67,11 @@ public class ParserGroovy {
                 }
             }
             parsedClass.setOutputPath("/Users/gwolfmann/Downloads/groovy-sintactic-analizer/src/generated/");
-            parsedClass.generateJavaSource();
-            System.out.println("Codigo generado para "+fileName);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return parsedClass;
     }
 
 }
