@@ -27,13 +27,17 @@ public class Attrib {
     }
 
     private String genericToStringJava(){
-        return genericType.isPresent() ? "<"+genericType.get()+">" : "";
+        return genericType.map(s -> "<" + s + ">").orElse("");
     }
 
     private String mapJavaType(){
         switch (type.toLowerCase(Locale.ROOT)) {
-            case "collection" : {return "List";}
-            default : {return type;}
+            case "collection":  {
+                return "List";
+            }
+            default : {
+                return type;
+            }
         }
     }
 
@@ -42,11 +46,15 @@ public class Attrib {
     }
 
     public Boolean isNative(){
-        Boolean result = switch (getNameOfClass().toLowerCase(Locale.ROOT)) {
-            case "boolean", "bigdecimal","string","int","long" -> Boolean.TRUE;
-            default -> Boolean.FALSE;
-        };
-        return result;
+        switch (getNameOfClass().toLowerCase(Locale.ROOT)) {
+            case "boolean" :
+            case "bigdecimal":
+            case "string":
+            case "int":
+            case "long": {return Boolean.TRUE;}
+            default: {return Boolean.FALSE;}
+        }
+       // return result;
     }
 
 }
