@@ -1,12 +1,12 @@
-Analizer/ParsedClass.java
- Analizer.ParsedClass
+Analizer/FilesNavigation.java
+ Analizer.FilesNavigation
 Analizer/Attrib.java
  Analizer.Attrib
 Analizer/ClassToParse.java
  Analizer.ClassToParse
  Analizer.ClassToParse$ClassToParseBuilder
-Analizer/FilesNavigation.java
- Analizer.FilesNavigation
+Analizer/ParsedClass.java
+ Analizer.ParsedClass
 Analizer/FileProcessor.java
  Analizer.FileProcessor
 Main.java

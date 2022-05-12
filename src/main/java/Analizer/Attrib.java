@@ -51,7 +51,9 @@ public class Attrib {
             case "bigdecimal":
             case "string":
             case "int":
-            case "long": {return Boolean.TRUE;}
+            case "long":
+            case "integer":
+            case "date": {return Boolean.TRUE;}
             default: {return Boolean.FALSE;}
         }
        // return result;

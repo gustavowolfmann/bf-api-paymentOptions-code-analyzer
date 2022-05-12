@@ -27,14 +27,16 @@ public class ParserGroovy {
     }
 
     public void doParse(){
-        ClassToParse classToParse = filesToProcess.getNext();
-        ParsedClass parsedClass = parsing(classToParse.getPath()+classToParse.getName());
-        parsedClass.generateJavaSource();
-        filesToProcess.markDone(classToParse);
-        System.out.println("Codigo generado para "+parsedClass.getName());
-
-        List<String> toCall = parsedClass.getNoNativeAttribs();
-        filesToProcess.addFiles(toCall);
+        Optional<ClassToParse> classToParse = filesToProcess.getNext();
+        while (classToParse.isPresent()) {
+            ParsedClass parsedClass = parsing(classToParse.get().getPath()+classToParse.get().getName());
+            parsedClass.generateJavaSource();
+            filesToProcess.markDone(classToParse.get());
+            System.out.println("Codigo generado para "+parsedClass.getName());
+            List<String> toCall = parsedClass.getNoNativeAttribs();
+            filesToProcess.addFiles(toCall);
+            classToParse = filesToProcess.getNext();
+        }
         /*
         System.out.println("toCall de "+parsedClass.getName()+" tiene "+ String.valueOf(toCall.size())+" no nativos");
         toCall.stream().forEach(s -> {System.out.println(s);});

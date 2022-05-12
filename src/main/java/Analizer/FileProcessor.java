@@ -20,9 +20,11 @@ public class FileProcessor {
         toParseDict.put("PaymentOptionsResponse",Boolean.TRUE);
     }
 
-    public ClassToParse getNext(){
-        return toParseList.get(0);
-        //parsing(classToParse.getPath()+classToParse.getName());
+    public Optional<ClassToParse> getNext(){
+        Optional<ClassToParse> result = Optional.empty();
+        if (toParseList.size()>0)
+            result = Optional.of(toParseList.get(0));
+        return result;
     }
 
     public void addFiles(List<String> fileNames){
@@ -30,7 +32,7 @@ public class FileProcessor {
     }
 
     private void addFile(String fileName) {
-        if (!(toParseDict.containsKey(fileName))) {
+        if (!(toParseDict.containsKey(fileName))) {  // to avoid process more than once
             Optional<Path> filePath = findPath(fileName + ".groovy");
             if (filePath.isPresent()) {
                 updateFilesToProcess(fileName, filePath.get());
@@ -48,7 +50,7 @@ public class FileProcessor {
 
     private Optional<Path> findPath(String fileName) {
 
-     return FilesNavigation.findFileInPath(fileName ,"/Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment")
+     return FilesNavigation.findFileInPath(fileName ,"/Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/")
         .map(Path::getParent);
      /*
             .map(f -> fileName+" esta en "+String.valueOf(f)+"/")
