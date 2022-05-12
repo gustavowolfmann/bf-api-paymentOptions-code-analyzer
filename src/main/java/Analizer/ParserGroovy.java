@@ -35,8 +35,10 @@ public class ParserGroovy {
 
         List<String> toCall = parsedClass.getNoNativeAttribs();
         filesToProcess.addFiles(toCall);
+        /*
         System.out.println("toCall de "+parsedClass.getName()+" tiene "+ String.valueOf(toCall.size())+" no nativos");
         toCall.stream().forEach(s -> {System.out.println(s);});
+         */
     }
 
     public ParsedClass parsing(String fileName){

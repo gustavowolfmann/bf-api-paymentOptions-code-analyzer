@@ -5,6 +5,8 @@ Analizer/Attrib.java
 Analizer/ClassToParse.java
  Analizer.ClassToParse
  Analizer.ClassToParse$ClassToParseBuilder
+Analizer/FilesNavigation.java
+ Analizer.FilesNavigation
 Analizer/FileProcessor.java
  Analizer.FileProcessor
 Main.java
