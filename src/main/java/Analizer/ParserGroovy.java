@@ -9,6 +9,8 @@ import lombok.Data;
 import lombok.Singular;
 import org.codehaus.groovy.ast.*;
 import org.codehaus.groovy.ast.builder.AstBuilder;
+import org.codehaus.groovy.ast.expr.ConstantExpression;
+import org.codehaus.groovy.ast.expr.ListExpression;
 import org.codehaus.groovy.control.CompilePhase;
 
 import java.nio.file.Files;
@@ -78,6 +80,7 @@ public class ParserGroovy {
                                 }
                                 parsedClass.getAttribs().add(attrib);
                             }
+                            //((AnnotationNode) ((ConstantExpression) ((ListExpression)((ClassNode) node).getAnnotations().get(1).getMembers().get("value")).getExpressions().get(0)).getValue()).getMembers().get("value").getText()
 
                         }
                     }
