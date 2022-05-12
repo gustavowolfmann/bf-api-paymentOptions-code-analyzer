@@ -5,35 +5,37 @@ import lombok.Data;
 @Data()
 public class PaymentMethod {
 
-    private String getId;
+    private String Id;
 
-    private String getName;
+    private String Name;
 
-    private String getThumbnail;
+    private String Thumbnail;
 
-    private List<String> getAdditionalInfo;
+    private List<String> AdditionalInfo;
 
-    private int getMinAccreditationDays;
+    private int MinAccreditationDays;
 
-    private int getMaxAccreditationDays;
+    private int MaxAccreditationDays;
 
-    private int getPriority;
+    private int Priority;
 
-    private PaymentMethodType getType;
+    private PaymentMethodType Type;
 
-    private Issuer getIssuer;
+    private Issuer Issuer;
 
-    private DeferredCaptureType getDeferredCapture;
+    private DeferredCaptureType DeferredCapture;
 
-    private List<DescribablePaymentOptions> getGroupingConfigurations;
+    private List<DescribablePaymentOptions> GroupingConfigurations;
 
-    private ActivationState getStatus;
+    private ActivationState Status;
 
-    private String getStatusDetails;
+    private String StatusDetails;
 
-    private BigDecimal getMinAllowedAmount;
+    private BigDecimal MinAllowedAmount;
 
-    private BigDecimal getMaxAllowedAmount;
+    private BigDecimal MaxAllowedAmount;
 
-    private AccreditationTime getAccreditationTime;
+    private AccreditationTime AccreditationTime;
+}
+ivate AccreditationTime getAccreditationTime;
 }

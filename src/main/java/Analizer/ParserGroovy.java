@@ -71,7 +71,7 @@ public class ParserGroovy {
                             List<MethodNode> methods = ((ClassNode) node).getMethods();
                             for (final MethodNode m : methods) {
                                 Attrib attrib = new Attrib();
-                                attrib.setName(m.getName());
+                                attrib.setName(m.getName().replace("get",""));
                                 attrib.setType(m.getReturnType().getName());
                                 if (null != m.getReturnType().getGenericsTypes()) {
                                     attrib.setGenericType(Optional.of(m.getReturnType().getGenericsTypes()[0].getType().getName()));
