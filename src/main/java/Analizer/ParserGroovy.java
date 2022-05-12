@@ -7,9 +7,7 @@ import java.nio.charset.StandardCharsets;
 
 import lombok.Data;
 import lombok.Singular;
-import org.codehaus.groovy.ast.ASTNode;
-import org.codehaus.groovy.ast.ClassNode;
-import org.codehaus.groovy.ast.FieldNode;
+import org.codehaus.groovy.ast.*;
 import org.codehaus.groovy.ast.builder.AstBuilder;
 import org.codehaus.groovy.control.CompilePhase;
 
@@ -57,15 +55,30 @@ public class ParserGroovy {
                     if (!(name.toLowerCase(Locale.ROOT).contains("builder"))) {
                         parsedClass.setAnnotation(Optional.of("Data"));
                         parsedClass.setName(name);
-                        List<FieldNode> fields = ((ClassNode) node).getFields();
-                        for (final FieldNode f : fields) {
-                            Attrib attrib = new Attrib();
-                            attrib.setName(f.getName());
-                            attrib.setType(f.getType().getName());
-                            if (null != f.getType().getGenericsTypes()) {
-                                attrib.setGenericType(Optional.of(f.getType().getGenericsTypes()[0].getType().getName()));
+                        if (((ClassNode) node).isPrimaryClassNode()){
+                            List<FieldNode> fields = ((ClassNode) node).getFields();
+                            for (final FieldNode f : fields) {
+                                Attrib attrib = new Attrib();
+                                attrib.setName(f.getName());
+                                attrib.setType(f.getType().getName());
+                                if (null != f.getType().getGenericsTypes()) {
+                                    attrib.setGenericType(Optional.of(f.getType().getGenericsTypes()[0].getType().getName()));
+                                }
+                                parsedClass.getAttribs().add(attrib);
                             }
-                            parsedClass.getAttribs().add(attrib);
+                        }
+                        if (((ClassNode) node).isInterface()) {
+                            List<MethodNode> methods = ((ClassNode) node).getMethods();
+                            for (final MethodNode m : methods) {
+                                Attrib attrib = new Attrib();
+                                attrib.setName(m.getName());
+                                attrib.setType(m.getReturnType().getName());
+                                if (null != m.getReturnType().getGenericsTypes()) {
+                                    attrib.setGenericType(Optional.of(m.getReturnType().getGenericsTypes()[0].getType().getName()));
+                                }
+                                parsedClass.getAttribs().add(attrib);
+                            }
+
                         }
                     }
                 }
