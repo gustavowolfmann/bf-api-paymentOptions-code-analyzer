@@ -18,3 +18,5 @@ Objetivo: realizar un diff del archivo generado con el archivo final en bf-payme
 @Todo para automatizar el proceso
 1) A partir del archivo groovy raiz (PaymentOptionsResponse.groovy) leer los campos que lo compone, y aquellos que no sean primitivos, scanearlos para realizar el mismo proceso
 2) Con los archivos Java generados, comparar contra los archivos existentes en bf-payments para detectar, falta de archivos o falta o modificacion en las estructuras de clases
+
+El resultado del proceso es expuesto en el archivo logAnalyzer.txt en el directorio raiz del proycto
