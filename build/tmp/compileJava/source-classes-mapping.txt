@@ -1,6 +1,3 @@
-Analizer/ClassToParse.java
- Analizer.ClassToParse
- Analizer.ClassToParse$ClassToParseBuilder
 Analizer/ParsedClass.java
  Analizer.ParsedClass
 Analizer/Attrib.java
@@ -13,5 +10,8 @@ Analizer/FilesNavigation.java
  Analizer.FilesNavigation
 Analizer/Logger.java
  Analizer.Logger
+Analizer/ClassToParse.java
+ Analizer.ClassToParse
+ Analizer.ClassToParse$ClassToParseBuilder
 Analizer/ParserGroovy.java
  Analizer.ParserGroovy

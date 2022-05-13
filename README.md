@@ -1,9 +1,16 @@
 # bf-api-paymentOptions-code-analyzer
 Analiza la estructura atributos de una clase groovy y genera una clase Java con la misma estructura
-El archivo fuente groovy esta hardcoded en el main
-        ParserGroovy.parsing("/Users/gwolfmann/Downloads/groovy-sintactic-analizer/src/main/java/Analizer/PaymentOptionsResponse.groovy");
+El archivo raaiz desde donde inciar el analisis de los codigo fuente groovy esta en la clase FileProcessor.java, en el metodo initialize()
+
+public void initialize(){
+toParseList.add(new ClassToParse("PaymentOptionsResponse.groovy",
+"/Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/response/",
+Boolean.FALSE));
+}
+
 por lo que hay que cambiar el path para que lea el archivo deseado
-El archivo java lo crea en una subdirectorio /src/generated
+
+Los archivos java los crea en una subdirectorio /src/generated
 Objetivo: realizar un diff del archivo generado con el archivo final en bf-payments
 
 @Todo para automatizar el proceso
