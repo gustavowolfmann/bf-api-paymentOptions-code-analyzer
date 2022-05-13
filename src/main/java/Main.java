@@ -1,3 +1,4 @@
+import Analizer.JavaFilesDiff;
 import Analizer.Logger;
 import Analizer.ParserGroovy;
 
@@ -7,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         parser.initialize();
         parser.doParse();
+        JavaFilesDiff.compareJavaDirs("/Users/gwolfmann/Downloads/groovy-sintactic-analizer/src/generated/");
         Logger.saveLogs();
         System.out.println("Processing completed");
     }

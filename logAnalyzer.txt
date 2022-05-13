@@ -188,4 +188,35 @@ buyingflow.dto.payment.StoredCardStatus no encontrado
 buyingflow.dto.payment.StoredCardStatus no encontrado
 buyingflow.dto.payment.StoredCardStatus no encontrado
 buyingflow.dto.payment.StoredCardStatus[] no encontrado
+
+----- Java Not Found Files -----
+No existe en proyecto Category.java
+No existe en proyecto Country.java
+No existe en proyecto CreditOptionCondition.java
+No existe en proyecto Currency.java
+No existe en proyecto CurrencyConversion.java
+No existe en proyecto CustomDate.java
+No existe en proyecto DefaultInstallments.java
+No existe en proyecto DifferentialPricing.java
+No existe en proyecto DiscountType.java
+No existe en proyecto FreePricing.java
+No existe en proyecto IdNameTuple.java
+No existe en proyecto Location.java
+No existe en proyecto PaymentItem.java
+No existe en proyecto PaymentMethodATM.java
+No existe en proyecto PaymentMethodBankTransfer.java
+No existe en proyecto PaymentMethodCard.java
+No existe en proyecto PaymentMethodCash.java
+No existe en proyecto PaymentMethodCrypto.java
+No existe en proyecto PaymentMethodDigitalCurrency.java
+No existe en proyecto PaymentMethodPayPal.java
+No existe en proyecto PaymentMethodTicket.java
+No existe en proyecto PaymentOptionsResponse.java
+No existe en proyecto ShippingMethod.java
+No existe en proyecto Site.java
+No se genero GroupingConfiguration.java
+No se genero Item.java
+No se genero PaymentOptionsResponsesCollector.java
+No se genero WrapperAndHeadersResponse.java
+No se genero WrapperResponse.java
 ----- End of log -----

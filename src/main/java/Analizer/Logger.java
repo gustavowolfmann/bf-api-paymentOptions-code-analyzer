@@ -11,6 +11,7 @@ public class Logger {
     private static List<String> toProcess = new ArrayList<>();
     private static List<String> processed = new ArrayList<>();
     private static List<String> notFound = new ArrayList<>();
+    private static List<String> javaFilesNotFound = new ArrayList<>();
 
     public static void addToProcess(String msg){
         toProcess.add(msg);
@@ -24,6 +25,10 @@ public class Logger {
         notFound.add(msg);
     }
 
+    public static void addJavaNotFound(String msg){
+        javaFilesNotFound.add(msg);
+    }
+
     public static void saveLogs(){
         try {
             PrintWriter fileWriter = new PrintWriter(new FileWriter("./logAnalyzer.txt"));
@@ -35,6 +40,9 @@ public class Logger {
             fileWriter.println("");
             fileWriter.println("----- Not Found Classes -----");
             notFound.stream().sorted().forEach(fileWriter::println);
+            fileWriter.println("");
+            fileWriter.println("----- Java Not Found Files -----");
+            javaFilesNotFound.stream().sorted().forEach(fileWriter::println);
             fileWriter.println("----- End of log -----");
             fileWriter.close();
             System.out.println("Log Successfully wrote.");
