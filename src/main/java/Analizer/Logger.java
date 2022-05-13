@@ -1,25 +1,10 @@
 package Analizer;
 
-
-import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
-import com.github.javaparser.printer.DefaultPrettyPrinter;
-import com.github.javaparser.printer.configuration.DefaultConfigurationOption;
-import com.github.javaparser.printer.configuration.DefaultPrinterConfiguration;
-import com.github.javaparser.printer.configuration.Indentation;
-import lombok.Data;
-
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-
 
 public class Logger {
 

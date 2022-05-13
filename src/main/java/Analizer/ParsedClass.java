@@ -59,7 +59,6 @@ public class ParsedClass {
             if (!(attrib.isNative()))
                 result.add(attrib.getNameOfClass());
         }
-
         return result;
     }
 }

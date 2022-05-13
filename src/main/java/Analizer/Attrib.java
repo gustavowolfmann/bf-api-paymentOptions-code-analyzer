@@ -56,7 +56,6 @@ public class Attrib {
             case "date": {return Boolean.TRUE;}
             default: {return Boolean.FALSE;}
         }
-       // return result;
     }
 
 }

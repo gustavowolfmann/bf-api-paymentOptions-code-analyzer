@@ -1,16 +1,16 @@
-Analizer/FilesNavigation.java
- Analizer.FilesNavigation
-Analizer/Attrib.java
- Analizer.Attrib
 Analizer/ClassToParse.java
  Analizer.ClassToParse
  Analizer.ClassToParse$ClassToParseBuilder
 Analizer/ParsedClass.java
  Analizer.ParsedClass
+Analizer/Attrib.java
+ Analizer.Attrib
 Analizer/FileProcessor.java
  Analizer.FileProcessor
 Main.java
  Main
+Analizer/FilesNavigation.java
+ Analizer.FilesNavigation
 Analizer/Logger.java
  Analizer.Logger
 Analizer/ParserGroovy.java

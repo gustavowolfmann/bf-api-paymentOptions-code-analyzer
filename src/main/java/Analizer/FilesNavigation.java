@@ -2,20 +2,13 @@ package Analizer;
 
 
 import lombok.Data;
-import org.codehaus.groovy.ast.ASTNode;
-import org.codehaus.groovy.ast.ClassNode;
-import org.codehaus.groovy.ast.FieldNode;
-import org.codehaus.groovy.ast.builder.AstBuilder;
-import org.codehaus.groovy.control.CompilePhase;
 
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;

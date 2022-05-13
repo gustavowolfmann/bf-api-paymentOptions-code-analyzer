@@ -15,7 +15,8 @@ public class FileProcessor {
 
     public void initialize(){
         toParseList.add(new ClassToParse("PaymentOptionsResponse.groovy",
-                "/Users/gwolfmann/Downloads/groovy-sintactic-analizer/src/main/java/Analizer/",
+"/Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/response/",
+//                "/Users/gwolfmann/Downloads/groovy-sintactic-analizer/src/main/java/Analizer/",
                 Boolean.FALSE));
         toParseDict.put("PaymentOptionsResponse",Boolean.TRUE);
     }
