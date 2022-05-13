@@ -1,4 +1,5 @@
 import Analizer.FilesNavigation;
+import Analizer.Logger;
 import Analizer.ParserGroovy;
 
 import java.nio.file.Path;
@@ -11,6 +12,7 @@ public class Main {
     public static void main(String[] args) {
         parser.initialize();
         parser.doParse();
+        Logger.saveLogs();
         System.out.println("Processing completed");
     }
 }

@@ -37,7 +37,7 @@ public class FileProcessor {
             if (filePath.isPresent()) {
                 updateFilesToProcess(fileName, filePath.get());
             } else {
-                System.out.printf(fileName + " no encontrado");
+                Logger.addNotFound(fileName + " no encontrado");
             }
         }
     }
@@ -45,19 +45,13 @@ public class FileProcessor {
         String pathOfFile = p.toString()+"/";
         toParseDict.put(fileName,Boolean.TRUE);
         toParseList.add(new ClassToParse(fileName+".groovy", pathOfFile, Boolean.FALSE));
-        System.out.println("se agrego en el dict "+fileName+ " con el path " + pathOfFile);
+        Logger.addToProcess("se agrego en el dict "+fileName+ " con el path " + pathOfFile);
     }
 
     private Optional<Path> findPath(String fileName) {
 
      return FilesNavigation.findFileInPath(fileName ,"/Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/")
         .map(Path::getParent);
-     /*
-            .map(f -> fileName+" esta en "+String.valueOf(f)+"/")
-            .orElse(fileName+" no esta"));
-        return "";
-
-      */
     }
 
 

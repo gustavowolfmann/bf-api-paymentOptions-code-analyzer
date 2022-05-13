@@ -5,11 +5,15 @@ import java.io.IOException;
 
 import java.nio.charset.StandardCharsets;
 
+import com.github.javaparser.utils.Pair;
+import groovyjarjarantlr.collections.impl.LList;
 import lombok.Data;
 import lombok.Singular;
 import org.codehaus.groovy.ast.*;
 import org.codehaus.groovy.ast.builder.AstBuilder;
+import org.codehaus.groovy.ast.expr.AnnotationConstantExpression;
 import org.codehaus.groovy.ast.expr.ConstantExpression;
+import org.codehaus.groovy.ast.expr.Expression;
 import org.codehaus.groovy.ast.expr.ListExpression;
 import org.codehaus.groovy.control.CompilePhase;
 
@@ -29,23 +33,22 @@ public class ParserGroovy {
     public void doParse(){
         Optional<ClassToParse> classToParse = filesToProcess.getNext();
         while (classToParse.isPresent()) {
-            ParsedClass parsedClass = parsing(classToParse.get().getPath()+classToParse.get().getName());
+            Pair<ParsedClass, List<String>> parsedClassResult = parsing(classToParse.get().getPath()+classToParse.get().getName());
+            ParsedClass parsedClass = parsedClassResult.a;
             parsedClass.generateJavaSource();
             filesToProcess.markDone(classToParse.get());
-            System.out.println("Codigo generado para "+parsedClass.getName());
+            Logger.addProcessed("Codigo generado para "+parsedClass.getName());
             List<String> toCall = parsedClass.getNoNativeAttribs();
+            toCall.addAll(parsedClassResult.b);  // add subtypes if exists
             filesToProcess.addFiles(toCall);
             classToParse = filesToProcess.getNext();
         }
-        /*
-        System.out.println("toCall de "+parsedClass.getName()+" tiene "+ String.valueOf(toCall.size())+" no nativos");
-        toCall.stream().forEach(s -> {System.out.println(s);});
-         */
     }
 
-    public ParsedClass parsing(String fileName){
+    public Pair<ParsedClass,List<String>> parsing(String fileName){
         System.out.println("Parsing file "+fileName);
         ParsedClass parsedClass = new ParsedClass();
+        List<String> subTypes = new ArrayList<>();
         try {
             final String sourceContents = Files.readString(Path.of(fileName), StandardCharsets.UTF_8);
             final AstBuilder astBuilder = new AstBuilder();
@@ -80,8 +83,16 @@ public class ParserGroovy {
                                 }
                                 parsedClass.getAttribs().add(attrib);
                             }
-                            //((AnnotationNode) ((ConstantExpression) ((ListExpression)((ClassNode) node).getAnnotations().get(1).getMembers().get("value")).getExpressions().get(0)).getValue()).getMembers().get("value").getText()
 
+                            if (((ClassNode) node).getAnnotations().size() > 0) {  // has subtypes
+                                List<Expression> expressionList =  ((ListExpression)((ClassNode) node).getAnnotations().get(1).getMembers().get("value")).getExpressions();
+                                for(Expression e :expressionList) {
+                                    subTypes.add(((AnnotationNode)((ConstantExpression) e).getValue()).getMembers().get("value").getText());
+                                }
+                                //String subtype = ((AnnotationNode)((ConstantExpression) ((ListExpression)((ClassNode) node).getAnnotations().get(1).getMembers().get("value")).getExpressions().get(0)).getValue()).getMembers().get("value").getText();
+                                //ConstantExpression expressions = ((ConstantExpression) ((ListExpression)((ClassNode) node).getAnnotations().get(1).getMembers().get("value")).getExpressions().get(0));
+                                //        .getValue());
+                            }
                         }
                     }
                 }
@@ -91,7 +102,7 @@ public class ParserGroovy {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return parsedClass;
+        return new Pair<>(parsedClass, subTypes);
     }
 
 }

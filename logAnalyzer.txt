@@ -1,0 +1,191 @@
+----- Candidate Classes -----
+se agrego en el dict AccountMoneyAssetStatus con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict AccountMoneyInfo con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict AccreditationTime con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/constants/
+se agrego en el dict ActivationState con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict BillingInfo con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict BinInfo con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict BinSettings con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict Campaign con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict CardHolder con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict CardNumberValidation con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict CardValidation con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict Category con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict Country con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict Coupon con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict CreditLineDetail con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict CreditOption con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict CreditOptionCondition con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict Currency con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict CurrencyConversion con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict CustomDate con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict DefaultInstallments con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict DeferredCaptureType con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict DescribablePaymentOptions con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict DifferentialPricing con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict DiscountType con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/constants/
+se agrego en el dict FinancialInstitution con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict FreePricing con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict IdNameTuple con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict Installment con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict Issuer con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict IssuerDiscount con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict Location con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict PaymentItem con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethod con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodATM con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodAccountMoney con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodBankTransfer con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodCard con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodCash con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodConsumerCredits con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodCrypto con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodDigitalCurrency con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodPayPal con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodTicket con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodType con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentOptions con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict QuoteInfo con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict Requirements con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict SecurityCodeInfo con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict SecurityCodeLocation con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict SecurityCodeMode con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict ShippingMethod con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/shipping/
+se agrego en el dict Site con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict StoredAccount con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict StoredCard con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict StoredCardDetail con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict StoredCardStatus con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict StoredExpression con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict ValidationPrograms con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict WalletInfo con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+
+----- Processed Classes -----
+Codigo generado para AccountMoneyAssetStatus
+Codigo generado para AccountMoneyInfo
+Codigo generado para AccreditationTime
+Codigo generado para ActivationState
+Codigo generado para BillingInfo
+Codigo generado para BinInfo
+Codigo generado para BinSettings
+Codigo generado para Campaign
+Codigo generado para CardHolder
+Codigo generado para CardNumberValidation
+Codigo generado para CardValidation
+Codigo generado para Category
+Codigo generado para Country
+Codigo generado para Coupon
+Codigo generado para CreditLineDetail
+Codigo generado para CreditOption
+Codigo generado para CreditOptionCondition
+Codigo generado para Currency
+Codigo generado para CurrencyConversion
+Codigo generado para CustomDate
+Codigo generado para DefaultInstallments
+Codigo generado para DeferredCaptureType
+Codigo generado para DescribablePaymentOptions
+Codigo generado para DifferentialPricing
+Codigo generado para DiscountType
+Codigo generado para FinancialInstitution
+Codigo generado para FreePricing
+Codigo generado para IdNameTuple
+Codigo generado para Installment
+Codigo generado para Issuer
+Codigo generado para IssuerDiscount
+Codigo generado para Location
+Codigo generado para PaymentItem
+Codigo generado para PaymentMethod
+Codigo generado para PaymentMethodATM
+Codigo generado para PaymentMethodAccountMoney
+Codigo generado para PaymentMethodBankTransfer
+Codigo generado para PaymentMethodCard
+Codigo generado para PaymentMethodCash
+Codigo generado para PaymentMethodConsumerCredits
+Codigo generado para PaymentMethodCrypto
+Codigo generado para PaymentMethodDigitalCurrency
+Codigo generado para PaymentMethodPayPal
+Codigo generado para PaymentMethodTicket
+Codigo generado para PaymentMethodType
+Codigo generado para PaymentOptions
+Codigo generado para PaymentOptionsResponse
+Codigo generado para QuoteInfo
+Codigo generado para Requirements
+Codigo generado para SecurityCodeInfo
+Codigo generado para SecurityCodeLocation
+Codigo generado para SecurityCodeMode
+Codigo generado para ShippingMethod
+Codigo generado para Site
+Codigo generado para StoredAccount
+Codigo generado para StoredCard
+Codigo generado para StoredCardDetail
+Codigo generado para StoredCardStatus
+Codigo generado para StoredExpression
+Codigo generado para ValidationPrograms
+Codigo generado para WalletInfo
+
+----- Not Found Classes -----
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime[] no encontrado
+buyingflow.constants.DiscountType no encontrado
+buyingflow.constants.DiscountType no encontrado
+buyingflow.constants.DiscountType no encontrado
+buyingflow.constants.DiscountType no encontrado
+buyingflow.constants.DiscountType[] no encontrado
+buyingflow.dto.AccountMoneyAssetStatus no encontrado
+buyingflow.dto.AccountMoneyAssetStatus no encontrado
+buyingflow.dto.AccountMoneyAssetStatus no encontrado
+buyingflow.dto.AccountMoneyAssetStatus no encontrado
+buyingflow.dto.AccountMoneyAssetStatus[] no encontrado
+buyingflow.dto.payment.ActivationState[] no encontrado
+buyingflow.dto.payment.CardValidation no encontrado
+buyingflow.dto.payment.CardValidation no encontrado
+buyingflow.dto.payment.CardValidation no encontrado
+buyingflow.dto.payment.CardValidation no encontrado
+buyingflow.dto.payment.CardValidation[] no encontrado
+buyingflow.dto.payment.DeferredCaptureType no encontrado
+buyingflow.dto.payment.DeferredCaptureType no encontrado
+buyingflow.dto.payment.DeferredCaptureType no encontrado
+buyingflow.dto.payment.DeferredCaptureType no encontrado
+buyingflow.dto.payment.DeferredCaptureType no encontrado
+buyingflow.dto.payment.DeferredCaptureType no encontrado
+buyingflow.dto.payment.DeferredCaptureType[] no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType[] no encontrado
+buyingflow.dto.payment.SecurityCodeLocation no encontrado
+buyingflow.dto.payment.SecurityCodeLocation no encontrado
+buyingflow.dto.payment.SecurityCodeLocation no encontrado
+buyingflow.dto.payment.SecurityCodeLocation no encontrado
+buyingflow.dto.payment.SecurityCodeLocation[] no encontrado
+buyingflow.dto.payment.SecurityCodeMode no encontrado
+buyingflow.dto.payment.SecurityCodeMode no encontrado
+buyingflow.dto.payment.SecurityCodeMode no encontrado
+buyingflow.dto.payment.SecurityCodeMode no encontrado
+buyingflow.dto.payment.SecurityCodeMode[] no encontrado
+buyingflow.dto.payment.StoredCardStatus no encontrado
+buyingflow.dto.payment.StoredCardStatus no encontrado
+buyingflow.dto.payment.StoredCardStatus no encontrado
+buyingflow.dto.payment.StoredCardStatus no encontrado
+buyingflow.dto.payment.StoredCardStatus no encontrado
+buyingflow.dto.payment.StoredCardStatus no encontrado
+buyingflow.dto.payment.StoredCardStatus[] no encontrado
+----- End of log -----

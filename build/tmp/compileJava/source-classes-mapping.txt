@@ -11,5 +11,7 @@ Analizer/FileProcessor.java
  Analizer.FileProcessor
 Main.java
  Main
+Analizer/Logger.java
+ Analizer.Logger
 Analizer/ParserGroovy.java
  Analizer.ParserGroovy
