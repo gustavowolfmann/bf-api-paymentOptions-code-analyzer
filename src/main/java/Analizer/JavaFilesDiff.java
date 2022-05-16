@@ -1,17 +1,29 @@
 package Analizer;
 
+import com.github.javaparser.StaticJavaParser;
+import com.github.javaparser.ast.CompilationUnit;
+import com.github.javaparser.ast.Node;
+import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
+import com.github.javaparser.ast.body.FieldDeclaration;
+import com.github.javaparser.utils.Pair;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class JavaFilesDiff {
 
     private static String javaProjectPath = "/Users/gwolfmann/Downloads/fury_buyingflow-payments/domain/src/main/java/com/mercadolibre/payments/domain/payment_options/wrapper/";
     static HashMap<Path, Path> generatedFiles = new HashMap<>();
     static HashMap<Path, Path> projectFiles = new HashMap<>();
+    static HashMap<String, String> generatedFields = new HashMap<>();
+    static HashMap<String, String> projectFields = new HashMap<>();
 
     static public void compareJavaDirs(String javaGeneratedPath){
 
@@ -30,9 +42,12 @@ public class JavaFilesDiff {
         generatedFiles.keySet().forEach(path -> verifyInProject(path));
         projectFiles.keySet().forEach(path -> verifyInGenerated(path));
 
+        List<Pair<Path,Path>> toScanAttribs = listOfBoth();
+        toScanAttribs.forEach(pair ->scanPair(pair));
+
     }
 
-    static void verifyInGenerated(Path p){
+    private static void verifyInGenerated(Path p){
         if (!(generatedFiles.containsKey(p.getFileName())))
             Logger.addJavaNotFound("No se genero "+p.getFileName());
     }
@@ -40,6 +55,57 @@ public class JavaFilesDiff {
     private static void verifyInProject(Path p){
         if (!(projectFiles.containsKey(p.getFileName())))
             Logger.addJavaNotFound("No existe en proyecto "+p.getFileName());
+    }
+
+    private static List listOfBoth(){
+        return generatedFiles.keySet().stream()
+                .filter(projectFiles::containsKey)
+                .map(p->new Pair(generatedFiles.get(p),projectFiles.get(p.getFileName())))
+                .collect(Collectors.toList());
+    }
+
+    private static void scanPair(Pair<Path,Path> pair){
+        generatedFields.clear();
+        projectFields.clear();
+        try {
+            CompilationUnit cuGenerated = StaticJavaParser.parse(pair.a);
+            CompilationUnit cuProject = StaticJavaParser.parse(pair.b);
+            ClassOrInterfaceDeclaration clsGenerated = cuGenerated.findFirst(ClassOrInterfaceDeclaration.class)
+                    .orElseThrow(() -> new NoSuchElementException("Compilation unit doesn't contain a class or interface declaration!"));
+            clsGenerated.findAll(FieldDeclaration.class).forEach(fd -> generatedFields.put(fd.getVariable(0).getNameAsString(),
+                    fd.getVariable(0).getType().toString()));
+            ClassOrInterfaceDeclaration clsProject = cuProject.findFirst(ClassOrInterfaceDeclaration.class)
+                    .orElseThrow(() -> new NoSuchElementException("Compilation unit doesn't contain a class or interface declaration!"));
+            clsProject.findAll(FieldDeclaration.class).forEach(fd -> projectFields.put(fd.getVariable(0).getNameAsString(),
+                    fd.getVariable(0).getType().toString()));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        generatedFields.keySet().forEach(varname -> verifyInProFile(varname));
+        projectFields.keySet().forEach(varname -> verifyInGenFile(varname));
+    }
+
+    private static void verifyInProFile(String varName){
+        if (!(projectFields.containsKey(varName))) {
+            Logger.addJavaNotFound("No existe en proyecto el Field " + varName);
+        } else {
+            if (!(projectFields.get(varName).equals(generatedFields.get(varName)))) {
+                Logger.addJavaNotFound(varName+" es de tipo "+projectFields.get(varName)+
+                        " en el proyecto y de tipo "+generatedFields.get(varName)+"en el generado");
+            }
+        }
+    }
+
+    private static void verifyInGenFile(String varName){
+        if (!(generatedFields.containsKey(varName))) {
+            Logger.addJavaNotFound("No existe en proyecto el Field " + varName);
+        } else {
+            if (!(generatedFields.get(varName).equals(projectFields.get(varName)))) {
+                Logger.addJavaNotFound(varName+" es de tipo "+generatedFields.get(varName)+
+                        " en el generado y de tipo "+projectFields.get(varName)+"en el proyecto");
+            }
+        }
     }
 
 }

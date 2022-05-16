@@ -2,18 +2,18 @@ Analizer/ParsedClass.java
  Analizer.ParsedClass
 Analizer/Attrib.java
  Analizer.Attrib
+Analizer/FileProcessor.java
+ Analizer.FileProcessor
+Analizer/ParserGroovy.java
+ Analizer.ParserGroovy
 Analizer/FilesNavigation.java
  Analizer.FilesNavigation
+Analizer/Logger.java
+ Analizer.Logger
 Analizer/ClassToParse.java
  Analizer.ClassToParse
  Analizer.ClassToParse$ClassToParseBuilder
-Analizer/JavaFilesDiff.java
- Analizer.JavaFilesDiff
-Analizer/Logger.java
- Analizer.Logger
-Analizer/FileProcessor.java
- Analizer.FileProcessor
 Main.java
  Main
-Analizer/ParserGroovy.java
- Analizer.ParserGroovy
+Analizer/JavaFilesDiff.java
+ Analizer.JavaFilesDiff

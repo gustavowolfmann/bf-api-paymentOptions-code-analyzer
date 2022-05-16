@@ -14,7 +14,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.22'
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
     compile "org.codehaus.groovy:groovy-all:2.4.8"
-    implementation 'com.github.javaparser:javaparser-symbol-solver-core:3.24.2'
+    compile 'com.github.javaparser:javaparser-symbol-solver-core:3.24.2'
 
     //compile "org.codehaus.groovy.antlr:4.0.2"
     //compile "org.codehaus.groovy.antlr.parser:4.0.2"

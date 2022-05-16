@@ -37,5 +37,3 @@ public class PaymentMethod {
 
     private AccreditationTime AccreditationTime;
 }
-ivate AccreditationTime getAccreditationTime;
-}
