@@ -28,25 +28,25 @@ public class FileProcessor {
         return result;
     }
 
-    public void addFiles(List<String> fileNames){
-        fileNames.stream().forEach(this::addFile);
+    public void addFiles(List<String> fileNames, String fromSource){
+        fileNames.stream().forEach(s -> addFile(s,fromSource));
     }
 
-    private void addFile(String fileName) {
+    private void addFile(String fileName, String fromSource) {
         if (!(toParseDict.containsKey(fileName))) {  // to avoid process more than once
             Optional<Path> filePath = findPath(fileName + ".groovy");
             if (filePath.isPresent()) {
-                updateFilesToProcess(fileName, filePath.get());
+                updateFilesToProcess(fileName, fromSource, filePath.get());
             } else {
                 Logger.addNotFound(fileName + " no encontrado");
             }
         }
     }
-    private void updateFilesToProcess(String fileName, Path p) {
+    private void updateFilesToProcess(String fileName, String fromSource, Path p) {
         String pathOfFile = p.toString()+"/";
         toParseDict.put(fileName,Boolean.TRUE);
         toParseList.add(new ClassToParse(fileName+".groovy", pathOfFile, Boolean.FALSE));
-        Logger.addToProcess("se agrego en el dict "+fileName+ " con el path " + pathOfFile);
+        Logger.addToProcess("se agrego en el dict "+fileName+ " desde "+fromSource+ " con el path " + pathOfFile);
     }
 
     private Optional<Path> findPath(String fileName) {

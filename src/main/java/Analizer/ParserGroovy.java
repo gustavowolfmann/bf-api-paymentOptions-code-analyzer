@@ -37,7 +37,7 @@ public class ParserGroovy {
             Logger.addProcessed("Codigo generado para "+parsedClass.getName());
             List<String> toCall = parsedClass.getNoNativeAttribs();
             toCall.addAll(parsedClassResult.b);  // add subtypes if exists
-            filesToProcess.addFiles(toCall);
+            filesToProcess.addFiles(toCall,classToParse.get().getName());
             classToParse = filesToProcess.getNext();
         }
     }

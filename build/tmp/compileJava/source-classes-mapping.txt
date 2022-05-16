@@ -7,13 +7,13 @@ Analizer/FilesNavigation.java
 Analizer/ClassToParse.java
  Analizer.ClassToParse
  Analizer.ClassToParse$ClassToParseBuilder
-Analizer/FileProcessor.java
- Analizer.FileProcessor
-Analizer/ParserGroovy.java
- Analizer.ParserGroovy
-Analizer/Logger.java
- Analizer.Logger
-Main.java
- Main
 Analizer/JavaFilesDiff.java
  Analizer.JavaFilesDiff
+Analizer/Logger.java
+ Analizer.Logger
+Analizer/FileProcessor.java
+ Analizer.FileProcessor
+Main.java
+ Main
+Analizer/ParserGroovy.java
+ Analizer.ParserGroovy
