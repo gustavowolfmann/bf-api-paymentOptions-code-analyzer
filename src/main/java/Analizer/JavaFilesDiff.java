@@ -2,7 +2,6 @@ package Analizer;
 
 import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.FieldDeclaration;
 import com.github.javaparser.utils.Pair;
@@ -14,6 +13,7 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -41,10 +41,11 @@ public class JavaFilesDiff {
         }
         generatedFiles.keySet().forEach(path -> verifyInProject(path));
         projectFiles.keySet().forEach(path -> verifyInGenerated(path));
+    }
 
+    public static void compareFiles(){
         List<Pair<Path,Path>> toScanAttribs = listOfBoth();
         toScanAttribs.forEach(pair ->scanPair(pair));
-
     }
 
     private static void verifyInGenerated(Path p){
@@ -67,17 +68,18 @@ public class JavaFilesDiff {
     private static void scanPair(Pair<Path,Path> pair){
         generatedFields.clear();
         projectFields.clear();
+        System.out.println("Comparando "+pair.a.getFileName().toString());
         try {
             CompilationUnit cuGenerated = StaticJavaParser.parse(pair.a);
             CompilationUnit cuProject = StaticJavaParser.parse(pair.b);
-            ClassOrInterfaceDeclaration clsGenerated = cuGenerated.findFirst(ClassOrInterfaceDeclaration.class)
-                    .orElseThrow(() -> new NoSuchElementException("Compilation unit doesn't contain a class or interface declaration!"));
-            clsGenerated.findAll(FieldDeclaration.class).forEach(fd -> generatedFields.put(fd.getVariable(0).getNameAsString(),
-                    fd.getVariable(0).getType().toString()));
-            ClassOrInterfaceDeclaration clsProject = cuProject.findFirst(ClassOrInterfaceDeclaration.class)
-                    .orElseThrow(() -> new NoSuchElementException("Compilation unit doesn't contain a class or interface declaration!"));
-            clsProject.findAll(FieldDeclaration.class).forEach(fd -> projectFields.put(fd.getVariable(0).getNameAsString(),
-                    fd.getVariable(0).getType().toString()));
+            Optional<ClassOrInterfaceDeclaration> clsGenerated = cuGenerated.findFirst(ClassOrInterfaceDeclaration.class);
+//                    .orElseThrow(() -> new NoSuchElementException("Compilation unit doesn't contain a class or interface declaration!"));
+            clsGenerated.ifPresent(g -> g.findAll(FieldDeclaration.class).forEach(fd -> generatedFields.put(fd.getVariable(0).getNameAsString(),
+                    fd.getVariable(0).getType().toString())));
+            Optional<ClassOrInterfaceDeclaration> clsProject = cuProject.findFirst(ClassOrInterfaceDeclaration.class);
+                    //.orElseThrow(() -> new NoSuchElementException("Compilation unit doesn't contain a class or interface declaration!"));
+            clsProject.ifPresent(p->p.findAll(FieldDeclaration.class).forEach(fd -> projectFields.put(fd.getVariable(0).getNameAsString(),
+                    fd.getVariable(0).getType().toString())));
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -92,7 +94,7 @@ public class JavaFilesDiff {
         } else {
             if (!(projectFields.get(varName).equals(generatedFields.get(varName)))) {
                 Logger.addJavaNotFound(varName+" es de tipo "+projectFields.get(varName)+
-                        " en el proyecto y de tipo "+generatedFields.get(varName)+"en el generado");
+                        " en proyecto y de tipo "+generatedFields.get(varName)+" en generado");
             }
         }
     }
@@ -103,7 +105,7 @@ public class JavaFilesDiff {
         } else {
             if (!(generatedFields.get(varName).equals(projectFields.get(varName)))) {
                 Logger.addJavaNotFound(varName+" es de tipo "+generatedFields.get(varName)+
-                        " en el generado y de tipo "+projectFields.get(varName)+"en el proyecto");
+                        " en generado y de tipo "+projectFields.get(varName)+" en proyecto");
             }
         }
     }

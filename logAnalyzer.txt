@@ -130,32 +130,16 @@ buyingflow.constants.AccreditationTime no encontrado
 buyingflow.constants.AccreditationTime no encontrado
 buyingflow.constants.AccreditationTime no encontrado
 buyingflow.constants.AccreditationTime no encontrado
-buyingflow.constants.AccreditationTime no encontrado
-buyingflow.constants.AccreditationTime no encontrado
-buyingflow.constants.AccreditationTime[] no encontrado
 buyingflow.constants.DiscountType no encontrado
 buyingflow.constants.DiscountType no encontrado
-buyingflow.constants.DiscountType no encontrado
-buyingflow.constants.DiscountType no encontrado
-buyingflow.constants.DiscountType[] no encontrado
 buyingflow.dto.AccountMoneyAssetStatus no encontrado
 buyingflow.dto.AccountMoneyAssetStatus no encontrado
-buyingflow.dto.AccountMoneyAssetStatus no encontrado
-buyingflow.dto.AccountMoneyAssetStatus no encontrado
-buyingflow.dto.AccountMoneyAssetStatus[] no encontrado
-buyingflow.dto.payment.ActivationState[] no encontrado
 buyingflow.dto.payment.CardValidation no encontrado
 buyingflow.dto.payment.CardValidation no encontrado
-buyingflow.dto.payment.CardValidation no encontrado
-buyingflow.dto.payment.CardValidation no encontrado
-buyingflow.dto.payment.CardValidation[] no encontrado
 buyingflow.dto.payment.DeferredCaptureType no encontrado
 buyingflow.dto.payment.DeferredCaptureType no encontrado
 buyingflow.dto.payment.DeferredCaptureType no encontrado
 buyingflow.dto.payment.DeferredCaptureType no encontrado
-buyingflow.dto.payment.DeferredCaptureType no encontrado
-buyingflow.dto.payment.DeferredCaptureType no encontrado
-buyingflow.dto.payment.DeferredCaptureType[] no encontrado
 buyingflow.dto.payment.PaymentMethodType no encontrado
 buyingflow.dto.payment.PaymentMethodType no encontrado
 buyingflow.dto.payment.PaymentMethodType no encontrado
@@ -168,26 +152,14 @@ buyingflow.dto.payment.PaymentMethodType no encontrado
 buyingflow.dto.payment.PaymentMethodType no encontrado
 buyingflow.dto.payment.PaymentMethodType no encontrado
 buyingflow.dto.payment.PaymentMethodType no encontrado
-buyingflow.dto.payment.PaymentMethodType no encontrado
-buyingflow.dto.payment.PaymentMethodType no encontrado
-buyingflow.dto.payment.PaymentMethodType[] no encontrado
 buyingflow.dto.payment.SecurityCodeLocation no encontrado
 buyingflow.dto.payment.SecurityCodeLocation no encontrado
-buyingflow.dto.payment.SecurityCodeLocation no encontrado
-buyingflow.dto.payment.SecurityCodeLocation no encontrado
-buyingflow.dto.payment.SecurityCodeLocation[] no encontrado
 buyingflow.dto.payment.SecurityCodeMode no encontrado
 buyingflow.dto.payment.SecurityCodeMode no encontrado
-buyingflow.dto.payment.SecurityCodeMode no encontrado
-buyingflow.dto.payment.SecurityCodeMode no encontrado
-buyingflow.dto.payment.SecurityCodeMode[] no encontrado
 buyingflow.dto.payment.StoredCardStatus no encontrado
 buyingflow.dto.payment.StoredCardStatus no encontrado
 buyingflow.dto.payment.StoredCardStatus no encontrado
 buyingflow.dto.payment.StoredCardStatus no encontrado
-buyingflow.dto.payment.StoredCardStatus no encontrado
-buyingflow.dto.payment.StoredCardStatus no encontrado
-buyingflow.dto.payment.StoredCardStatus[] no encontrado
 
 ----- Java Not Found Files -----
 No existe en proyecto Category.java
@@ -214,9 +186,102 @@ No existe en proyecto PaymentMethodTicket.java
 No existe en proyecto PaymentOptionsResponse.java
 No existe en proyecto ShippingMethod.java
 No existe en proyecto Site.java
+No existe en proyecto el Field ASSETS_AVAILABLE
+No existe en proyecto el Field ASSETS_INVESTED
+No existe en proyecto el Field AccreditationTime
+No existe en proyecto el Field AdditionalInfo
+No existe en proyecto el Field DeferredCapture
+No existe en proyecto el Field GroupingConfigurations
+No existe en proyecto el Field GroupingType
+No existe en proyecto el Field Id
+No existe en proyecto el Field Issuer
+No existe en proyecto el Field MaxAccreditationDays
+No existe en proyecto el Field MaxAllowedAmount
+No existe en proyecto el Field MinAccreditationDays
+No existe en proyecto el Field MinAllowedAmount
+No existe en proyecto el Field Name
+No existe en proyecto el Field Priority
+No existe en proyecto el Field Status
+No existe en proyecto el Field StatusDetails
+No existe en proyecto el Field Thumbnail
+No existe en proyecto el Field Type
+No existe en proyecto el Field accreditationTime
+No existe en proyecto el Field accreditationTime
+No existe en proyecto el Field accreditationTime
+No existe en proyecto el Field additionalInfo
+No existe en proyecto el Field additionalInfo
+No existe en proyecto el Field additionalInfo
+No existe en proyecto el Field condition
+No existe en proyecto el Field creditCard
+No existe en proyecto el Field debitCard
+No existe en proyecto el Field defaultValue
+No existe en proyecto el Field defaultValue
+No existe en proyecto el Field defaultValue
+No existe en proyecto el Field deferredCapture
+No existe en proyecto el Field deferredCapture
+No existe en proyecto el Field deferredCapture
+No existe en proyecto el Field discountType
+No existe en proyecto el Field expired
+No existe en proyecto el Field financialInstitutions
+No existe en proyecto el Field groupingConfigurations
+No existe en proyecto el Field groupingConfigurations
+No existe en proyecto el Field groupingType
+No existe en proyecto el Field id
+No existe en proyecto el Field id
+No existe en proyecto el Field id
+No existe en proyecto el Field installments
+No existe en proyecto el Field issuer
+No existe en proyecto el Field issuer
+No existe en proyecto el Field issuer
+No existe en proyecto el Field labels
+No existe en proyecto el Field maxAccreditationDays
+No existe en proyecto el Field maxAccreditationDays
+No existe en proyecto el Field maxAccreditationDays
+No existe en proyecto el Field maxAllowedAmount
+No existe en proyecto el Field minAccreditationDays
+No existe en proyecto el Field minAccreditationDays
+No existe en proyecto el Field minAccreditationDays
+No existe en proyecto el Field minAllowedAmount
+No existe en proyecto el Field name
+No existe en proyecto el Field name
+No existe en proyecto el Field name
+No existe en proyecto el Field prepaidCard
+No existe en proyecto el Field priority
+No existe en proyecto el Field priority
+No existe en proyecto el Field priority
+No existe en proyecto el Field settings
+No existe en proyecto el Field site
+No existe en proyecto el Field status
+No existe en proyecto el Field status
+No existe en proyecto el Field status
+No existe en proyecto el Field statusDetails
+No existe en proyecto el Field statusDetails
+No existe en proyecto el Field statusDetails
+No existe en proyecto el Field thumbnail
+No existe en proyecto el Field thumbnail
+No existe en proyecto el Field thumbnail
+No existe en proyecto el Field type
+No existe en proyecto el Field type
+No existe en proyecto el Field type
 No se genero GroupingConfiguration.java
 No se genero Item.java
 No se genero PaymentOptionsResponsesCollector.java
 No se genero WrapperAndHeadersResponse.java
 No se genero WrapperResponse.java
+assetStatus es de tipo AccountMoneyAssetStatus en generado y de tipo String en proyecto
+assetStatus es de tipo String en proyecto y de tipo AccountMoneyAssetStatus en generado
+defaultIssuer es de tipo Boolean en proyecto y de tipo boolean en generado
+defaultIssuer es de tipo boolean en generado y de tipo Boolean en proyecto
+defaultValue es de tipo Boolean en proyecto y de tipo boolean en generado
+defaultValue es de tipo boolean en generado y de tipo Boolean en proyecto
+groupingConfigurations es de tipo List<DescribablePaymentOptions> en generado y de tipo List<GroupingConfiguration> en proyecto
+groupingConfigurations es de tipo List<GroupingConfiguration> en proyecto y de tipo List<DescribablePaymentOptions> en generado
+id es de tipo Long en proyecto y de tipo long en generado
+id es de tipo Long en proyecto y de tipo long en generado
+id es de tipo long en generado y de tipo Long en proyecto
+id es de tipo long en generado y de tipo Long en proyecto
+items es de tipo List<Item> en proyecto y de tipo List<PaymentItem> en generado
+items es de tipo List<PaymentItem> en generado y de tipo List<Item> en proyecto
+mandatory es de tipo Boolean en generado y de tipo boolean en proyecto
+mandatory es de tipo boolean en proyecto y de tipo Boolean en generado
 ----- End of log -----

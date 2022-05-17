@@ -27,5 +27,5 @@ public class Site {
 
     private String secureExternal;
 
-    private Map<String> settings;
+    private Map<String, Object> settings;
 }

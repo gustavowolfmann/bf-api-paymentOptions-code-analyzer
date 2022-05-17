@@ -11,7 +11,8 @@ public class Attrib {
 
     private String name;
     private String type;
-    private Optional<String> genericType = Optional.empty();
+    private Optional<String> firstGenericType = Optional.empty();
+    private Optional<String> secondGenericType = Optional.empty();
 
     public String toStringJava(){
         return getJavaType() + " " + getJavaName();
@@ -27,7 +28,9 @@ public class Attrib {
     }
 
     private String genericToStringJava(){
-        return genericType.map(s -> "<" + s + ">").orElse("");
+        return firstGenericType.map(f -> "<" + f +
+                secondGenericType.map( s -> ","+s).orElse("")
+                + ">").orElse("");
     }
 
     private String mapJavaType(){
@@ -42,7 +45,7 @@ public class Attrib {
     }
 
     public String getNameOfClass(){
-        return genericType.isPresent() ? genericType.get() : type;
+        return firstGenericType.isPresent() ? firstGenericType.get() : type;
     }
 
     public Boolean isNative(){

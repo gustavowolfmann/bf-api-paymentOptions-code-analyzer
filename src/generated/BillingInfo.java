@@ -17,7 +17,7 @@ public class BillingInfo {
 
     private String entityType;
 
-    private Map<String> additionalInfo;
+    private Map<String, String> additionalInfo;
 
     private Boolean isDocumentPending;
 

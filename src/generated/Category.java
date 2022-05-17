@@ -17,7 +17,7 @@ public class Category {
 
     private String attributeTypes;
 
-    private Map<String> settings;
+    private Map<String, Object> settings;
 
     private long metaCategId;
 

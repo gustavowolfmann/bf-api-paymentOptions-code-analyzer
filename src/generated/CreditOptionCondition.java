@@ -31,5 +31,5 @@ public class CreditOptionCondition {
 
     private String tem;
 
-    private Map<String> rawCreditOptionCondition;
+    private Map<String, String> rawCreditOptionCondition;
 }

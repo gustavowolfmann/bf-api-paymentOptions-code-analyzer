@@ -9,6 +9,7 @@ public class Main {
         parser.initialize();
         parser.doParse();
         JavaFilesDiff.compareJavaDirs("/Users/gwolfmann/Downloads/groovy-sintactic-analizer/src/generated/");
+        JavaFilesDiff.compareFiles();
         Logger.saveLogs();
         System.out.println("Processing completed");
     }

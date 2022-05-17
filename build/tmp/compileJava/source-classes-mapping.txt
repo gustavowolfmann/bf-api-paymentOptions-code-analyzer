@@ -4,15 +4,15 @@ Analizer/Attrib.java
  Analizer.Attrib
 Analizer/FileProcessor.java
  Analizer.FileProcessor
-Analizer/ParserGroovy.java
- Analizer.ParserGroovy
+Analizer/ClassToParse.java
+ Analizer.ClassToParse
+ Analizer.ClassToParse$ClassToParseBuilder
 Analizer/FilesNavigation.java
  Analizer.FilesNavigation
 Analizer/Logger.java
  Analizer.Logger
-Analizer/ClassToParse.java
- Analizer.ClassToParse
- Analizer.ClassToParse$ClassToParseBuilder
+Analizer/ParserGroovy.java
+ Analizer.ParserGroovy
 Main.java
  Main
 Analizer/JavaFilesDiff.java

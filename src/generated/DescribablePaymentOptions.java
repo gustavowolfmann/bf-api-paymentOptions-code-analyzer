@@ -7,5 +7,3 @@ public class DescribablePaymentOptions {
 
     private String GroupingType;
 }
-
-}

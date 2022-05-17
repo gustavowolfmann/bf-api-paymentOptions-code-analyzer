@@ -58,15 +58,21 @@ public class ParserGroovy {
                         parsedClass.setAnnotation(Optional.of("Data"));
                         parsedClass.setName(name);
                         if (((ClassNode) node).isPrimaryClassNode()){
+                            parsedClass.setIsEnum(((ClassNode) node).isEnum());
                             List<FieldNode> fields = ((ClassNode) node).getFields();
                             for (final FieldNode f : fields) {
-                                Attrib attrib = new Attrib();
-                                attrib.setName(f.getName());
-                                attrib.setType(f.getType().getName());
-                                if (null != f.getType().getGenericsTypes()) {
-                                    attrib.setGenericType(Optional.of(f.getType().getGenericsTypes()[0].getType().getName()));
+                                if (!(isEnumInternal(f.getName()))){
+                                    Attrib attrib = new Attrib();
+                                    attrib.setName(f.getName());
+                                    attrib.setType(f.getType().getName());
+                                    if (null != f.getType().getGenericsTypes()) {
+                                        attrib.setFirstGenericType(Optional.of(f.getType().getGenericsTypes()[0].getType().getName()));
+                                        if (f.getType().getName().equalsIgnoreCase("map")){
+                                            attrib.setSecondGenericType(Optional.of(f.getType().getGenericsTypes()[1].getType().getName()));
+                                        }
+                                    }
+                                    parsedClass.getAttribs().add(attrib);
                                 }
-                                parsedClass.getAttribs().add(attrib);
                             }
                         }
                         if (((ClassNode) node).isInterface()) {
@@ -76,7 +82,10 @@ public class ParserGroovy {
                                 attrib.setName(m.getName().replace("get",""));
                                 attrib.setType(m.getReturnType().getName());
                                 if (null != m.getReturnType().getGenericsTypes()) {
-                                    attrib.setGenericType(Optional.of(m.getReturnType().getGenericsTypes()[0].getType().getName()));
+                                    attrib.setFirstGenericType(Optional.of(m.getReturnType().getGenericsTypes()[0].getType().getName()));
+                                    if (m.getReturnType().getName().equalsIgnoreCase("map")){
+                                        attrib.setSecondGenericType(Optional.of(m.getReturnType().getGenericsTypes()[1].getType().getName()));
+                                    }
                                 }
                                 parsedClass.getAttribs().add(attrib);
                             }
@@ -98,6 +107,15 @@ public class ParserGroovy {
             e.printStackTrace();
         }
         return new Pair<>(parsedClass, subTypes);
+    }
+
+    private boolean isEnumInternal(String fieldName){
+        switch (fieldName.toLowerCase(Locale.ROOT)) {
+            case "$values" :
+            case "max_value":
+            case "min_value": {return Boolean.TRUE;}
+            default: {return Boolean.FALSE;}
+        }
     }
 
 }
