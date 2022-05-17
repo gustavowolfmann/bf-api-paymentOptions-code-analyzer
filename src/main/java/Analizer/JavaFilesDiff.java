@@ -68,7 +68,8 @@ public class JavaFilesDiff {
     private static void scanPair(Pair<Path,Path> pair){
         generatedFields.clear();
         projectFields.clear();
-        System.out.println("Comparando "+pair.a.getFileName().toString());
+        String fileName = pair.a.getFileName().toString();
+        System.out.println("Comparando "+fileName);
         try {
             CompilationUnit cuGenerated = StaticJavaParser.parse(pair.a);
             CompilationUnit cuProject = StaticJavaParser.parse(pair.b);
@@ -84,28 +85,28 @@ public class JavaFilesDiff {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        generatedFields.keySet().forEach(varname -> verifyInProFile(varname));
-        projectFields.keySet().forEach(varname -> verifyInGenFile(varname));
+        generatedFields.keySet().forEach(varname -> verifyInProFile(varname, fileName));
+        projectFields.keySet().forEach(varname -> verifyInGenFile(varname, fileName));
     }
 
-    private static void verifyInProFile(String varName){
+    private static void verifyInProFile(String varName, String fileName){
         if (!(projectFields.containsKey(varName))) {
-            Logger.addJavaNotFound("No existe en proyecto el Field " + varName);
+            Logger.addJavaNotFound("No existe en proyecto el Field " + varName + " en " + fileName);
         } else {
             if (!(projectFields.get(varName).equals(generatedFields.get(varName)))) {
                 Logger.addJavaNotFound(varName+" es de tipo "+projectFields.get(varName)+
-                        " en proyecto y de tipo "+generatedFields.get(varName)+" en generado");
+                        " en proyecto y de tipo "+generatedFields.get(varName)+" en generado de "+fileName);
             }
         }
     }
 
-    private static void verifyInGenFile(String varName){
+    private static void verifyInGenFile(String varName, String fileName){
         if (!(generatedFields.containsKey(varName))) {
-            Logger.addJavaNotFound("No existe en proyecto el Field " + varName);
+            Logger.addJavaNotFound("No existe en proyecto el Field " + varName + " en " + fileName);
         } else {
             if (!(generatedFields.get(varName).equals(projectFields.get(varName)))) {
                 Logger.addJavaNotFound(varName+" es de tipo "+generatedFields.get(varName)+
-                        " en generado y de tipo "+projectFields.get(varName)+" en proyecto");
+                        " en generado y de tipo "+projectFields.get(varName)+" en proyecto de " + fileName);
             }
         }
     }

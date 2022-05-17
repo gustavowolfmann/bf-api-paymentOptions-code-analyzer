@@ -170,7 +170,6 @@ No existe en proyecto CurrencyConversion.java
 No existe en proyecto CustomDate.java
 No existe en proyecto DefaultInstallments.java
 No existe en proyecto DifferentialPricing.java
-No existe en proyecto DiscountType.java
 No existe en proyecto FreePricing.java
 No existe en proyecto IdNameTuple.java
 No existe en proyecto Location.java
@@ -186,102 +185,102 @@ No existe en proyecto PaymentMethodTicket.java
 No existe en proyecto PaymentOptionsResponse.java
 No existe en proyecto ShippingMethod.java
 No existe en proyecto Site.java
-No existe en proyecto el Field ASSETS_AVAILABLE
-No existe en proyecto el Field ASSETS_INVESTED
-No existe en proyecto el Field AccreditationTime
-No existe en proyecto el Field AdditionalInfo
-No existe en proyecto el Field DeferredCapture
-No existe en proyecto el Field GroupingConfigurations
-No existe en proyecto el Field GroupingType
-No existe en proyecto el Field Id
-No existe en proyecto el Field Issuer
-No existe en proyecto el Field MaxAccreditationDays
-No existe en proyecto el Field MaxAllowedAmount
-No existe en proyecto el Field MinAccreditationDays
-No existe en proyecto el Field MinAllowedAmount
-No existe en proyecto el Field Name
-No existe en proyecto el Field Priority
-No existe en proyecto el Field Status
-No existe en proyecto el Field StatusDetails
-No existe en proyecto el Field Thumbnail
-No existe en proyecto el Field Type
-No existe en proyecto el Field accreditationTime
-No existe en proyecto el Field accreditationTime
-No existe en proyecto el Field accreditationTime
-No existe en proyecto el Field additionalInfo
-No existe en proyecto el Field additionalInfo
-No existe en proyecto el Field additionalInfo
-No existe en proyecto el Field condition
-No existe en proyecto el Field creditCard
-No existe en proyecto el Field debitCard
-No existe en proyecto el Field defaultValue
-No existe en proyecto el Field defaultValue
-No existe en proyecto el Field defaultValue
-No existe en proyecto el Field deferredCapture
-No existe en proyecto el Field deferredCapture
-No existe en proyecto el Field deferredCapture
-No existe en proyecto el Field discountType
-No existe en proyecto el Field expired
-No existe en proyecto el Field financialInstitutions
-No existe en proyecto el Field groupingConfigurations
-No existe en proyecto el Field groupingConfigurations
-No existe en proyecto el Field groupingType
-No existe en proyecto el Field id
-No existe en proyecto el Field id
-No existe en proyecto el Field id
-No existe en proyecto el Field installments
-No existe en proyecto el Field issuer
-No existe en proyecto el Field issuer
-No existe en proyecto el Field issuer
-No existe en proyecto el Field labels
-No existe en proyecto el Field maxAccreditationDays
-No existe en proyecto el Field maxAccreditationDays
-No existe en proyecto el Field maxAccreditationDays
-No existe en proyecto el Field maxAllowedAmount
-No existe en proyecto el Field minAccreditationDays
-No existe en proyecto el Field minAccreditationDays
-No existe en proyecto el Field minAccreditationDays
-No existe en proyecto el Field minAllowedAmount
-No existe en proyecto el Field name
-No existe en proyecto el Field name
-No existe en proyecto el Field name
-No existe en proyecto el Field prepaidCard
-No existe en proyecto el Field priority
-No existe en proyecto el Field priority
-No existe en proyecto el Field priority
-No existe en proyecto el Field settings
-No existe en proyecto el Field site
-No existe en proyecto el Field status
-No existe en proyecto el Field status
-No existe en proyecto el Field status
-No existe en proyecto el Field statusDetails
-No existe en proyecto el Field statusDetails
-No existe en proyecto el Field statusDetails
-No existe en proyecto el Field thumbnail
-No existe en proyecto el Field thumbnail
-No existe en proyecto el Field thumbnail
-No existe en proyecto el Field type
-No existe en proyecto el Field type
-No existe en proyecto el Field type
+No existe en proyecto el Field ASSETS_AVAILABLE en AccountMoneyInfo.java
+No existe en proyecto el Field ASSETS_INVESTED en AccountMoneyInfo.java
+No existe en proyecto el Field AccreditationTime en PaymentMethod.java
+No existe en proyecto el Field AdditionalInfo en PaymentMethod.java
+No existe en proyecto el Field DeferredCapture en PaymentMethod.java
+No existe en proyecto el Field GroupingConfigurations en PaymentMethod.java
+No existe en proyecto el Field GroupingType en DescribablePaymentOptions.java
+No existe en proyecto el Field Id en PaymentMethod.java
+No existe en proyecto el Field Issuer en PaymentMethod.java
+No existe en proyecto el Field MaxAccreditationDays en PaymentMethod.java
+No existe en proyecto el Field MaxAllowedAmount en PaymentMethod.java
+No existe en proyecto el Field MinAccreditationDays en PaymentMethod.java
+No existe en proyecto el Field MinAllowedAmount en PaymentMethod.java
+No existe en proyecto el Field Name en PaymentMethod.java
+No existe en proyecto el Field Priority en PaymentMethod.java
+No existe en proyecto el Field Status en PaymentMethod.java
+No existe en proyecto el Field StatusDetails en PaymentMethod.java
+No existe en proyecto el Field Thumbnail en PaymentMethod.java
+No existe en proyecto el Field Type en PaymentMethod.java
+No existe en proyecto el Field accreditationTime en PaymentMethod.java
+No existe en proyecto el Field accreditationTime en PaymentMethodAccountMoney.java
+No existe en proyecto el Field accreditationTime en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field additionalInfo en PaymentMethod.java
+No existe en proyecto el Field additionalInfo en PaymentMethodAccountMoney.java
+No existe en proyecto el Field additionalInfo en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field condition en CreditOption.java
+No existe en proyecto el Field creditCard en PaymentMethod.java
+No existe en proyecto el Field debitCard en PaymentMethod.java
+No existe en proyecto el Field defaultValue en PaymentMethod.java
+No existe en proyecto el Field defaultValue en PaymentMethodAccountMoney.java
+No existe en proyecto el Field defaultValue en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field deferredCapture en PaymentMethod.java
+No existe en proyecto el Field deferredCapture en PaymentMethodAccountMoney.java
+No existe en proyecto el Field deferredCapture en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field expired en StoredCard.java
+No existe en proyecto el Field financialInstitutions en PaymentMethod.java
+No existe en proyecto el Field groupingConfigurations en PaymentMethod.java
+No existe en proyecto el Field groupingConfigurations en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field groupingType en DescribablePaymentOptions.java
+No existe en proyecto el Field id en PaymentMethod.java
+No existe en proyecto el Field id en PaymentMethodAccountMoney.java
+No existe en proyecto el Field id en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field installments en DescribablePaymentOptions.java
+No existe en proyecto el Field issuer en PaymentMethod.java
+No existe en proyecto el Field issuer en PaymentMethodAccountMoney.java
+No existe en proyecto el Field issuer en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field labels en DescribablePaymentOptions.java
+No existe en proyecto el Field maxAccreditationDays en PaymentMethod.java
+No existe en proyecto el Field maxAccreditationDays en PaymentMethodAccountMoney.java
+No existe en proyecto el Field maxAccreditationDays en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field maxAllowedAmount en PaymentMethod.java
+No existe en proyecto el Field minAccreditationDays en PaymentMethod.java
+No existe en proyecto el Field minAccreditationDays en PaymentMethodAccountMoney.java
+No existe en proyecto el Field minAccreditationDays en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field minAllowedAmount en PaymentMethod.java
+No existe en proyecto el Field name en PaymentMethod.java
+No existe en proyecto el Field name en PaymentMethodAccountMoney.java
+No existe en proyecto el Field name en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field prepaidCard en PaymentMethod.java
+No existe en proyecto el Field priority en PaymentMethod.java
+No existe en proyecto el Field priority en PaymentMethodAccountMoney.java
+No existe en proyecto el Field priority en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field settings en PaymentMethod.java
+No existe en proyecto el Field site en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field status en PaymentMethod.java
+No existe en proyecto el Field status en PaymentMethodAccountMoney.java
+No existe en proyecto el Field status en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field statusDetails en PaymentMethod.java
+No existe en proyecto el Field statusDetails en PaymentMethodAccountMoney.java
+No existe en proyecto el Field statusDetails en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field thumbnail en PaymentMethod.java
+No existe en proyecto el Field thumbnail en PaymentMethodAccountMoney.java
+No existe en proyecto el Field thumbnail en PaymentMethodConsumerCredits.java
+No existe en proyecto el Field type en PaymentMethod.java
+No existe en proyecto el Field type en PaymentMethodAccountMoney.java
+No existe en proyecto el Field type en PaymentMethodConsumerCredits.java
+No se genero Experiments.java
 No se genero GroupingConfiguration.java
 No se genero Item.java
 No se genero PaymentOptionsResponsesCollector.java
 No se genero WrapperAndHeadersResponse.java
 No se genero WrapperResponse.java
-assetStatus es de tipo AccountMoneyAssetStatus en generado y de tipo String en proyecto
-assetStatus es de tipo String en proyecto y de tipo AccountMoneyAssetStatus en generado
-defaultIssuer es de tipo Boolean en proyecto y de tipo boolean en generado
-defaultIssuer es de tipo boolean en generado y de tipo Boolean en proyecto
-defaultValue es de tipo Boolean en proyecto y de tipo boolean en generado
-defaultValue es de tipo boolean en generado y de tipo Boolean en proyecto
-groupingConfigurations es de tipo List<DescribablePaymentOptions> en generado y de tipo List<GroupingConfiguration> en proyecto
-groupingConfigurations es de tipo List<GroupingConfiguration> en proyecto y de tipo List<DescribablePaymentOptions> en generado
-id es de tipo Long en proyecto y de tipo long en generado
-id es de tipo Long en proyecto y de tipo long en generado
-id es de tipo long en generado y de tipo Long en proyecto
-id es de tipo long en generado y de tipo Long en proyecto
-items es de tipo List<Item> en proyecto y de tipo List<PaymentItem> en generado
-items es de tipo List<PaymentItem> en generado y de tipo List<Item> en proyecto
-mandatory es de tipo Boolean en generado y de tipo boolean en proyecto
-mandatory es de tipo boolean en proyecto y de tipo Boolean en generado
+assetStatus es de tipo AccountMoneyAssetStatus en generado y de tipo String en proyecto de AccountMoneyInfo.java
+assetStatus es de tipo String en proyecto y de tipo AccountMoneyAssetStatus en generado de AccountMoneyInfo.java
+defaultIssuer es de tipo Boolean en proyecto y de tipo boolean en generado de Issuer.java
+defaultIssuer es de tipo boolean en generado y de tipo Boolean en proyecto de Issuer.java
+defaultValue es de tipo Boolean en proyecto y de tipo boolean en generado de StoredCard.java
+defaultValue es de tipo boolean en generado y de tipo Boolean en proyecto de StoredCard.java
+groupingConfigurations es de tipo List<DescribablePaymentOptions> en generado y de tipo List<GroupingConfiguration> en proyecto de PaymentMethodAccountMoney.java
+groupingConfigurations es de tipo List<GroupingConfiguration> en proyecto y de tipo List<DescribablePaymentOptions> en generado de PaymentMethodAccountMoney.java
+id es de tipo Long en proyecto y de tipo long en generado de Campaign.java
+id es de tipo Long en proyecto y de tipo long en generado de Coupon.java
+id es de tipo long en generado y de tipo Long en proyecto de Campaign.java
+id es de tipo long en generado y de tipo Long en proyecto de Coupon.java
+items es de tipo List<Item> en proyecto y de tipo List<PaymentItem> en generado de PaymentOptions.java
+items es de tipo List<PaymentItem> en generado y de tipo List<Item> en proyecto de PaymentOptions.java
+mandatory es de tipo Boolean en generado y de tipo boolean en proyecto de ValidationPrograms.java
+mandatory es de tipo boolean en proyecto y de tipo Boolean en generado de ValidationPrograms.java
 ----- End of log -----
