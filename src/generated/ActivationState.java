@@ -4,5 +4,5 @@ import lombok.Data;
 
 public enum ActivationState {
 
-    status
+    ACTIVE, DEACTIVE, TESTING, status
 }

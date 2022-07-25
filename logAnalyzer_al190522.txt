@@ -1,0 +1,286 @@
+----- Candidate Classes -----
+se agrego en el dict AccountMoneyAssetStatus desde AccountMoneyInfo.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict AccountMoneyInfo desde PaymentOptionsResponse.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict AccreditationTime desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/constants/
+se agrego en el dict ActivationState desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict BillingInfo desde CardHolder.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict BinInfo desde BinSettings.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict BinSettings desde PaymentMethodCard.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict Campaign desde Coupon.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict CardHolder desde StoredCard.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict CardNumberValidation desde BinSettings.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict CardValidation desde CardNumberValidation.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict Category desde Site.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict Country desde Site.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict Coupon desde PaymentOptionsResponse.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict CreditLineDetail desde PaymentMethodConsumerCredits.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict CreditOption desde CreditLineDetail.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict CreditOptionCondition desde CreditOption.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict Currency desde Site.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict CurrencyConversion desde Site.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict CustomDate desde CreditLineDetail.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict DefaultInstallments desde DescribablePaymentOptions.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict DeferredCaptureType desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict DescribablePaymentOptions desde StoredCard.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict DifferentialPricing desde DescribablePaymentOptions.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict DiscountType desde Campaign.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/constants/
+se agrego en el dict FinancialInstitution desde PaymentMethodBankTransfer.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict FreePricing desde DescribablePaymentOptions.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict IdNameTuple desde PaymentOptionsResponse.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict Installment desde DefaultInstallments.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict Issuer desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict IssuerDiscount desde Issuer.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict Location desde Country.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict PaymentItem desde PaymentOptions.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethod desde PaymentOptions.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodATM desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodAccountMoney desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodBankTransfer desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodCard desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodCash desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodConsumerCredits desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodCrypto desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodDigitalCurrency desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodPayPal desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodTicket desde PaymentMethod.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentMethodType desde StoredCard.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict PaymentOptions desde PaymentOptionsResponse.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict QuoteInfo desde WalletInfo.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict Requirements desde ValidationPrograms.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict SecurityCodeInfo desde BinSettings.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict SecurityCodeLocation desde SecurityCodeInfo.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict SecurityCodeMode desde SecurityCodeInfo.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict ShippingMethod desde Site.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/shipping/
+se agrego en el dict Site desde PaymentMethodConsumerCredits.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/
+se agrego en el dict StoredAccount desde StoredCardDetail.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict StoredCard desde PaymentOptionsResponse.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict StoredCardDetail desde StoredCard.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict StoredCardStatus desde StoredCard.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict StoredExpression desde StoredCard.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict ValidationPrograms desde StoredCard.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+se agrego en el dict WalletInfo desde PaymentOptionsResponse.groovy con el path /Users/gwolfmann/Downloads/buyingflow-api/target/work/plugins/buyingflow-commons-1.317.0/src/groovy/buyingflow/dto/payment/
+
+----- Processed Classes -----
+Codigo generado para AccountMoneyAssetStatus
+Codigo generado para AccountMoneyInfo
+Codigo generado para AccreditationTime
+Codigo generado para ActivationState
+Codigo generado para BillingInfo
+Codigo generado para BinInfo
+Codigo generado para BinSettings
+Codigo generado para Campaign
+Codigo generado para CardHolder
+Codigo generado para CardNumberValidation
+Codigo generado para CardValidation
+Codigo generado para Category
+Codigo generado para Country
+Codigo generado para Coupon
+Codigo generado para CreditLineDetail
+Codigo generado para CreditOption
+Codigo generado para CreditOptionCondition
+Codigo generado para Currency
+Codigo generado para CurrencyConversion
+Codigo generado para CustomDate
+Codigo generado para DefaultInstallments
+Codigo generado para DeferredCaptureType
+Codigo generado para DescribablePaymentOptions
+Codigo generado para DifferentialPricing
+Codigo generado para DiscountType
+Codigo generado para FinancialInstitution
+Codigo generado para FreePricing
+Codigo generado para IdNameTuple
+Codigo generado para Installment
+Codigo generado para Issuer
+Codigo generado para IssuerDiscount
+Codigo generado para Location
+Codigo generado para PaymentItem
+Codigo generado para PaymentMethod
+Codigo generado para PaymentMethodATM
+Codigo generado para PaymentMethodAccountMoney
+Codigo generado para PaymentMethodBankTransfer
+Codigo generado para PaymentMethodCard
+Codigo generado para PaymentMethodCash
+Codigo generado para PaymentMethodConsumerCredits
+Codigo generado para PaymentMethodCrypto
+Codigo generado para PaymentMethodDigitalCurrency
+Codigo generado para PaymentMethodPayPal
+Codigo generado para PaymentMethodTicket
+Codigo generado para PaymentMethodType
+Codigo generado para PaymentOptions
+Codigo generado para PaymentOptionsResponse
+Codigo generado para QuoteInfo
+Codigo generado para Requirements
+Codigo generado para SecurityCodeInfo
+Codigo generado para SecurityCodeLocation
+Codigo generado para SecurityCodeMode
+Codigo generado para ShippingMethod
+Codigo generado para Site
+Codigo generado para StoredAccount
+Codigo generado para StoredCard
+Codigo generado para StoredCardDetail
+Codigo generado para StoredCardStatus
+Codigo generado para StoredExpression
+Codigo generado para ValidationPrograms
+Codigo generado para WalletInfo
+
+----- Not Found Classes -----
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.AccreditationTime no encontrado
+buyingflow.constants.DiscountType no encontrado
+buyingflow.constants.DiscountType no encontrado
+buyingflow.dto.AccountMoneyAssetStatus no encontrado
+buyingflow.dto.AccountMoneyAssetStatus no encontrado
+buyingflow.dto.payment.CardValidation no encontrado
+buyingflow.dto.payment.CardValidation no encontrado
+buyingflow.dto.payment.DeferredCaptureType no encontrado
+buyingflow.dto.payment.DeferredCaptureType no encontrado
+buyingflow.dto.payment.DeferredCaptureType no encontrado
+buyingflow.dto.payment.DeferredCaptureType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.PaymentMethodType no encontrado
+buyingflow.dto.payment.SecurityCodeLocation no encontrado
+buyingflow.dto.payment.SecurityCodeLocation no encontrado
+buyingflow.dto.payment.SecurityCodeMode no encontrado
+buyingflow.dto.payment.SecurityCodeMode no encontrado
+buyingflow.dto.payment.StoredCardStatus no encontrado
+buyingflow.dto.payment.StoredCardStatus no encontrado
+buyingflow.dto.payment.StoredCardStatus no encontrado
+buyingflow.dto.payment.StoredCardStatus no encontrado
+
+----- Java Not Found Files -----
+    No existe en proyecto Category.java            usado en: Site.groovy fuente de groovy:src/groovy/buyingflow/dto/Category.groovy
+    No existe en proyecto Country.java             usado en: Site.groovy fuente de groovy:src/groovy/buyingflow/dto/Country.groovy
+    No existe en proyecto CreditOptionCondition.java  usado en: CreditOption.groovy
+    No existe en proyecto Currency.java             usado en: Site.groovy
+    No existe en proyecto CurrencyConversion.java   usado en: Site.groovy
+    No existe en proyecto CustomDate.java           usado en: CreditLineDetail.groovy
+    No existe en proyecto DefaultInstallments.java  usado en: DescribablePaymentOptions
+    No existe en proyecto DifferentialPricing.java  usado en: DescribablePaymentOptions
+    No existe en proyecto FreePricing.java          usado en: DescribablePaymentOptions
+    No existe en proyecto IdNameTuple.java          usado en: PaymentOptionsResponse
+    No existe en proyecto Location.java             usado en: Country
+    No existe en proyecto PaymentItem.java          usado en: PaymentOptions
+    No existe en proyecto PaymentMethodATM.java     usado en: PaymentMethod
+    No existe en proyecto PaymentMethodBankTransfer.java  usado en: PaymentMethod
+    No existe en proyecto PaymentMethodCard.java    usado en: PaymentMethod
+    No existe en proyecto PaymentMethodCash.java    usado en: PaymentMethod
+    No existe en proyecto PaymentMethodCrypto.java  usado en: PaymentMethod
+    No existe en proyecto PaymentMethodDigitalCurrency.java  usado en: PaymentMethod
+    No existe en proyecto PaymentMethodPayPal.java  usado en: PaymentMethod
+    No existe en proyecto PaymentMethodTicket.java  usado en: PaymentMethod
+No existe en proyecto PaymentOptionsResponse.java  es el root de la llamada
+    No existe en proyecto ShippingMethod.java       usado en: Site.groovy
+    No existe en proyecto Site.java                 usado en: PaymentMethodConsumerCredits.groovy fuente en groovy: src/groovy/buyingflow/dto/Site.groovy
+    No existe en proyecto el Field ASSETS_AVAILABLE en AccountMoneyInfo.java   // cambiar assetStatus por el enumerado respectivo
+    No existe en proyecto el Field ASSETS_INVESTED en AccountMoneyInfo.java    // idem anterior
+No existe en proyecto el Field AccreditationTime en PaymentMethod.java     x
+No existe en proyecto el Field AdditionalInfo en PaymentMethod.java        x
+No existe en proyecto el Field DeferredCapture en PaymentMethod.java       x
+No existe en proyecto el Field GroupingConfigurations en PaymentMethod.java x
+No existe en proyecto el Field GroupingType en DescribablePaymentOptions.java x
+No existe en proyecto el Field Id en PaymentMethod.java                    x
+No existe en proyecto el Field Issuer en PaymentMethod.java                x
+No existe en proyecto el Field MaxAccreditationDays en PaymentMethod.java  x
+No existe en proyecto el Field MaxAllowedAmount en PaymentMethod.java      x
+No existe en proyecto el Field MinAccreditationDays en PaymentMethod.java  x
+No existe en proyecto el Field MinAllowedAmount en PaymentMethod.java      x
+No existe en proyecto el Field Name en PaymentMethod.java                  x
+No existe en proyecto el Field Priority en PaymentMethod.java              x
+No existe en proyecto el Field Status en PaymentMethod.java                x
+No existe en proyecto el Field StatusDetails en PaymentMethod.java         x
+No existe en proyecto el Field Thumbnail en PaymentMethod.java             x
+No existe en proyecto el Field Type en PaymentMethod.java                  x
+No existe en proyecto el Field accreditationTime en PaymentMethod.java     x
+No existe en proyecto el Field accreditationTime en PaymentMethodAccountMoney.java     x
+No existe en proyecto el Field accreditationTime en PaymentMethodConsumerCredits.java  x
+No existe en proyecto el Field additionalInfo en PaymentMethod.java                    x
+No existe en proyecto el Field additionalInfo en PaymentMethodAccountMoney.java        x
+No existe en proyecto el Field additionalInfo en PaymentMethodConsumerCredits.java     x
+No existe en proyecto el Field condition en CreditOption.java              // verificar si esta CreditOptionCondition
+No existe en proyecto el Field creditCard en PaymentMethod.java            x
+No existe en proyecto el Field debitCard en PaymentMethod.java             x
+No existe en proyecto el Field defaultValue en PaymentMethod.java          x
+No existe en proyecto el Field defaultValue en PaymentMethodAccountMoney.java          x
+No existe en proyecto el Field defaultValue en PaymentMethodConsumerCredits.java       x
+No existe en proyecto el Field deferredCapture en PaymentMethod.java                   x
+No existe en proyecto el Field deferredCapture en PaymentMethodAccountMoney.java       x
+No existe en proyecto el Field deferredCapture en PaymentMethodConsumerCredits.java    x
+No existe en proyecto el Field expired en StoredCard.java                              x
+No existe en proyecto el Field financialInstitutions en PaymentMethod.java             x  // esta en las subclases
+No existe en proyecto el Field groupingConfigurations en PaymentMethod.java            x
+No existe en proyecto el Field groupingConfigurations en PaymentMethodConsumerCredits.java  x
+No existe en proyecto el Field groupingType en DescribablePaymentOptions.java          x
+No existe en proyecto el Field id en PaymentMethod.java                       x
+No existe en proyecto el Field id en PaymentMethodAccountMoney.java           x
+No existe en proyecto el Field id en PaymentMethodConsumerCredits.java        x
+No existe en proyecto el Field installments en DescribablePaymentOptions.java x
+No existe en proyecto el Field issuer en PaymentMethod.java                   x
+No existe en proyecto el Field issuer en PaymentMethodAccountMoney.java       x
+No existe en proyecto el Field issuer en PaymentMethodConsumerCredits.java    x
+No existe en proyecto el Field labels en DescribablePaymentOptions.java       x
+No existe en proyecto el Field maxAccreditationDays en PaymentMethod.java     x
+No existe en proyecto el Field maxAccreditationDays en PaymentMethodAccountMoney.java     x
+No existe en proyecto el Field maxAccreditationDays en PaymentMethodConsumerCredits.java  x
+No existe en proyecto el Field maxAllowedAmount en PaymentMethod.java         x
+No existe en proyecto el Field minAccreditationDays en PaymentMethod.java     x
+No existe en proyecto el Field minAccreditationDays en PaymentMethodAccountMoney.java     x
+No existe en proyecto el Field minAccreditationDays en PaymentMethodConsumerCredits.java  x
+No existe en proyecto el Field minAllowedAmount en PaymentMethod.java         x
+No existe en proyecto el Field name en PaymentMethod.java                     x
+No existe en proyecto el Field name en PaymentMethodAccountMoney.java         x
+No existe en proyecto el Field name en PaymentMethodConsumerCredits.java      x
+No existe en proyecto el Field prepaidCard en PaymentMethod.java              x // es de las cards
+No existe en proyecto el Field priority en PaymentMethod.java                 x
+No existe en proyecto el Field priority en PaymentMethodAccountMoney.java     x
+No existe en proyecto el Field priority en PaymentMethodConsumerCredits.java  x
+No existe en proyecto el Field settings en PaymentMethod.java                 x
+    No existe en proyecto el Field site en PaymentMethodConsumerCredits.java      //agregar
+No existe en proyecto el Field status en PaymentMethod.java                   x
+No existe en proyecto el Field status en PaymentMethodAccountMoney.java       x
+No existe en proyecto el Field status en PaymentMethodConsumerCredits.java    x
+No existe en proyecto el Field statusDetails en PaymentMethod.java                 x
+No existe en proyecto el Field statusDetails en PaymentMethodAccountMoney.java     x
+No existe en proyecto el Field statusDetails en PaymentMethodConsumerCredits.java  x
+No existe en proyecto el Field thumbnail en PaymentMethod.java                     x
+No existe en proyecto el Field thumbnail en PaymentMethodAccountMoney.java         x
+No existe en proyecto el Field thumbnail en PaymentMethodConsumerCredits.java      x
+No existe en proyecto el Field type en PaymentMethod.java                          x
+No existe en proyecto el Field type en PaymentMethodAccountMoney.java              x
+No existe en proyecto el Field type en PaymentMethodConsumerCredits.java           x
+No se genero Experiments.java                       x
+No se genero GroupingConfiguration.java             x
+No se genero Item.java                              x
+No se genero PaymentOptionsResponsesCollector.java  x
+No se genero WrapperAndHeadersResponse.java         x
+No se genero WrapperResponse.java                   x
+assetStatus es de tipo AccountMoneyAssetStatus en generado y de tipo String en proyecto de AccountMoneyInfo.java
+assetStatus es de tipo String en proyecto y de tipo AccountMoneyAssetStatus en generado de AccountMoneyInfo.java
+defaultIssuer es de tipo Boolean en proyecto y de tipo boolean en generado de Issuer.java
+defaultIssuer es de tipo boolean en generado y de tipo Boolean en proyecto de Issuer.java
+defaultValue es de tipo Boolean en proyecto y de tipo boolean en generado de StoredCard.java
+defaultValue es de tipo boolean en generado y de tipo Boolean en proyecto de StoredCard.java
+groupingConfigurations es de tipo List<DescribablePaymentOptions> en generado y de tipo List<GroupingConfiguration> en proyecto de PaymentMethodAccountMoney.java
+groupingConfigurations es de tipo List<GroupingConfiguration> en proyecto y de tipo List<DescribablePaymentOptions> en generado de PaymentMethodAccountMoney.java
+id es de tipo Long en proyecto y de tipo long en generado de Campaign.java
+id es de tipo Long en proyecto y de tipo long en generado de Coupon.java
+id es de tipo long en generado y de tipo Long en proyecto de Campaign.java
+id es de tipo long en generado y de tipo Long en proyecto de Coupon.java
+items es de tipo List<Item> en proyecto y de tipo List<PaymentItem> en generado de PaymentOptions.java
+items es de tipo List<PaymentItem> en generado y de tipo List<Item> en proyecto de PaymentOptions.java
+mandatory es de tipo Boolean en generado y de tipo boolean en proyecto de ValidationPrograms.java
+mandatory es de tipo boolean en proyecto y de tipo Boolean en generado de ValidationPrograms.java
+----- End of log -----
